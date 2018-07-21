@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body{
+  margin: 50px;
+}
+.btn{
+  margin-bottom: 50px;
+}
+.box{
+  width: 300px;
+  height: 300px;
+  border: 10px solid #000;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-radius 500ms 0ms ease, background 1000ms 500ms ease-in, transform 500ms 1000ms ease-in-out;
+  /* transition-property: border-radius, background, transform; 
+  transition-duration: 500ms, 1000ms, 500ms;
+  transition-delay: 0ms, 500ms, 1000ms;
+  transition-timing-function: cubic-bezier(0,.28,.52,-0.76); */
+}
+/* 마우스 올릴때 작동 */
+/* .box:hover{  */
+/* 버튼 클릭시 작동 */
+  .box-act{
+  border-radius: 50%;
+  background: pink;
+  transform: rotate(360deg) scale(.5);
+}
