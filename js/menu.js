@@ -22,7 +22,7 @@ if (viewport.matches){
   nav.prepend(btn);
   item.addClass('menu-item');
   item.attr('tabindex', '0');
-  item.addClass('icon-plus');
+  text.addClass('icon-plus');
 
   btn.click(function () {
     $(this).toggleClass('btn-menu-act');
@@ -39,9 +39,8 @@ if (viewport.matches){
       item.removeClass('menu-item-act');
       $(this).addClass('menu-item-act');
       if($(this).hasClass('menu-item-act')){
-        consloe.log('하위메뉴 펼쳐져있음')
         text.removeClass('icon-minus').addClass('icon-plus');
-        $(this).find(TextTrackList).removeClass('icon-plus').addClass('icon-minus');
+        $(this).find(text).removeClass('icon-plus').addClass('icon-minus');
       }
     }
   });
