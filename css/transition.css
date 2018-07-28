@@ -23,7 +23,7 @@ body{
 /* 마우스 올릴때 작동 */
 /* .box:hover{  */
 /* 버튼 클릭시 작동 */
-  .box-act{
+.box-act{
   border-radius: 50%;
   background: pink;
   transform: rotate(360deg) scale(.5);
