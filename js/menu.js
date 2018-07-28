@@ -4,9 +4,9 @@
 //   }
 // })
 
-// window.resize(function(){
-//   location.reload();
-// });
+$(window).resize(function(){
+  location.reload();
+});
 var viewport = window.matchMedia('(max-width: 999px)');
 
 if (viewport.matches){
